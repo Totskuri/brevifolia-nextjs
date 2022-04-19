@@ -1,4 +1,18 @@
 ---
 label: Etusivu
 hide_body: true
-fields: []
+fields:
+- name: otsikko
+  type: text
+  config:
+    required: false
+  label: Otsikko
+- name: kuvaus
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Kuvaus
